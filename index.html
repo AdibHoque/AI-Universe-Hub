@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,12 @@
       rel="stylesheet"
     />
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Raw CSS -->
     <style>
       html {
@@ -24,15 +30,32 @@
     </style>
     <title></title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul></ul>
-      </nav>
+  <body style="font-family: 'Work Sans', sans-serif">
+    <header class="flex flex-col items-center gap-8 my-8">
+      <h4 class="text-5xl font-semibold text-[#111111] text-center">
+        AI Universe Hub
+      </h4>
+      <button
+        class="text-white text-xl font-semibold bg-[#EB5757] rounded-xl btn"
+        id="sort"
+      >
+        Sort By Date
+      </button>
     </header>
 
-    <main></main>
+    <main
+      class="container grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 lg:grid-cols-3"
+      id="container"
+    ></main>
+    <div class="flex items-center justify-center">
+      <button
+        class="text-white text-xl font-semibold bg-[#EB5757] rounded-xl btn my-8"
+        id="see-more"
+      >
+        See More
+      </button>
+    </div>
 
-    <footer></footer>
+    <script src="Src/scripts.js"></script>
   </body>
 </html>
